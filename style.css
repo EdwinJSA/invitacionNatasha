@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(254, 240, 243);*/
+    background-image: url(resource/img/bosque.jpg);
+    background-size: cover;
+    font-family: "Dancing Script", cursive;
+}
+
+.presentacion .container{
+    margin-top: 2rem;
+    padding-top: 20vh;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./resource/img/1.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#contenidoP{
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./resource/img/1.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#detalles{
+    background-image: url('./resource/img/2.webp');
+}
+
+#detalles .row{
+    /*border: solid 5px black;*/
+    height: 40vh;
+    width: 95vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items:end;
+}
+
+
+#ubicacion{
+    background-image: url('./resource/img/3.webp');
+}
+
+#confirmar{
+    background: rgb(238, 128, 218);
+    border: none;
+}
+
+#cronometro{
+    background: white;
+    height: 100px;
+    width: 95vw;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+
+}
+
+#temporizador{
+    background: white;
+}
+
+@media screen and (max-width: 1080px) {
+    .presentacion .container{
+        height: 63vh;
+        width: 95vw;
+    }
+}
