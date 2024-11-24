@@ -79,14 +79,18 @@ body{
         width: 95vw;
     }
 
-    #startAudio{
+    #startAudio {
         position: fixed;
         top: 10px;
         right: 10px;
         background: rgb(255, 175, 175);
         border: none;
         border-radius: 5px;
+        padding: 8px 15px; /* Añade más espacio interno */
+        font-size: 25px; /* Aumenta el tamaño de la fuente */
+        cursor: pointer; /* Mejora la experiencia de usuario */
     }
+    
 }
 
 #startAudio{
