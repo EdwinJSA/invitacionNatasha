@@ -37,6 +37,13 @@
     </style>
   </head>
   <body>
+    <audio id="audio" autoplay muted loop>
+      <source src="./resource/sounds/Tercer Cielo - No Crezcas Mas (Video Oficial).mp3" type="audio/mp3">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  
+    <button id="startAudio">Play</button>
+
     <section class="presentacion d-block">
       <div class="container col-12">
         <div class="row">
@@ -110,7 +117,20 @@
       </div>
     </div>
 
-    <audio src="./resource/sounds/Tercer Cielo - No Crezcas Mas (Video Oficial).mp3" controls autoplay hidden></audio>
+    <script>
+      document.getElementById('startAudio').addEventListener('click', function() {
+        const audio = document.getElementById('audio');
+        
+        // Se asegura que el audio se reproduzca al hacer clic
+        audio.play();
+  
+        // Después de un breve retraso, desmutea el audio
+        setTimeout(() => {
+          audio.muted = false; // Desmutea el audio
+        }, 500);
+      });
+    </script>
+
     <!-- Bootstrap JS (dependencias necesarias para que el modal funcione) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

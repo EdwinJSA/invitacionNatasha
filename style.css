@@ -79,3 +79,12 @@ body{
         width: 95vw;
     }
 }
+
+#startAudio{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgb(255, 175, 175);
+    border: none;
+    border-radius: 5px;
+}
